@@ -1,5 +1,44 @@
 <html lang="en">
 <head>
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    .container {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      max-width: 200px;
+    }
+    
+    .container img {
+      width: auto;
+      height: 300px;
+    }
+    
+    .container .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: red;
+      color: white;
+      font-size: 16px;
+      padding: 8px 4px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    .container .btn:hover {
+      background-color: green;
+    }
+
+    </style>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,10 +56,24 @@
   <br>
 <p>Good Luck</p>
 <br>
-<button onclick="rockSelection()">Rock</button>
-<button onclick="paperSelection()">Paper</button>
-<button onclick="scissorsSelection()">Scissors</button>
+
+  <div class="container">
+    <img src="https://i.pinimg.com/474x/a4/48/4d/a4484db1e2c9ee67209e0d3e54142aef--dwayne-johnson-tattoo-big-guys.jpg" alt="The Rock" style="width:100%" >
+    <button class= "btn" onclick="rockSelection()">Rock</button>
+  </div>
+
+  <div class="container">
+    <img src=" https://m.media-amazon.com/images/M/MV5BMTExODM1MDI4MDVeQTJeQWpwZ15BbWU3MDQzMjc1MzM@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Paper Man" style="width:100%">
+    <button class= "btn" onclick="paperSelection()">Paper</button>
+  </div>
+
+  <div class="container">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTIxMDEzODg4Nl5BMl5BanBnXkFtZTYwMDA0NzY3._V1_.jpg" alt="Edward" style="width:100%">
+    <button class= "btn" onclick="scissorsSelection()">Scissors</button>
+  </div>
 </body>
 
 <script src="app.js"></script>
 </html>
+
+
